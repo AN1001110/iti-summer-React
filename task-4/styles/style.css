@@ -1,0 +1,31 @@
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  li {
+    margin-left: 20px;
+    a {
+      text-decoration: none;
+      color: rgb(153 47 46);
+      font-weight: bold;
+    }
+  }
+}
+
+section div > h1 {
+  color: rgb(153 47 46);
+  font-weight: bold;
+}
+section form  .info div:not(:last-child)  {
+  width: 51%;
+  display: flex;
+  justify-content: space-between;
+   margin-bottom: 20px;
+
+}
+
+.h-sky-blue{
+color: rgb(83, 214, 231);
+}
+ fieldset {
+ margin-bottom: 10px;
+}
