@@ -15,17 +15,16 @@ section div > h1 {
   color: rgb(153 47 46);
   font-weight: bold;
 }
-section form  .info div:not(:last-child)  {
+section form .info div:not(:last-child) {
   width: 51%;
   display: flex;
   justify-content: space-between;
-   margin-bottom: 20px;
-
+  margin-bottom: 20px;
 }
 
-.h-sky-blue{
-color: rgb(83, 214, 231);
+.h-sky-blue {
+  color: rgb(83, 214, 231);
 }
- fieldset {
- margin-bottom: 10px;
+fieldset {
+  margin-bottom: 10px;
 }

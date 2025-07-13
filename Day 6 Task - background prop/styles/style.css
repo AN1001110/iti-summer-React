@@ -1,0 +1,49 @@
+body {
+  background-image: url("../imgs/background.jpg");
+  background-size: cover;
+  color:#e1c946;
+}
+header {
+  background-color: darkgreen;
+  height: 30px;
+  display: flex;
+ 
+  align-items: center;
+}
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  li {
+    margin-left: 20px;
+    a {
+      text-decoration: none;
+      color:white;
+      font-weight: bold;
+    }
+  }
+}
+
+main section .contact-form {
+  display: flex;
+  flex-direction: column;
+  background-color: darkgreen;
+  justify-content: space-between;
+  height: 55vh;
+  width: 40%;
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  input {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+}
