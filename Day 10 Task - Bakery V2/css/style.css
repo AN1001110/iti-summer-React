@@ -1,0 +1,368 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #969696;
+  --second-color: #fff;
+  --icon-color: #8e7754;
+  --h-color: #303030;
+  --p-color: #686868;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 15vh;
+  padding: 0 5vw;
+  row-gap: 2rem;
+
+  .logo {
+    width: 15vw;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  nav {
+    width: 60vw;
+
+    ul {
+      padding: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      list-style-type: none;
+      li a {
+        color: var(--second-color);
+        font-size: 18px;
+        font-weight: bold;
+
+        text-decoration: none;
+      }
+      li a:hover {
+        color: var(--icon-color);
+      }
+    }
+  }
+}
+.sec1 {
+  padding-top: 15vh;
+  gap: 5vh;
+  color: var(--second-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-image: url("../imgs/drew-coffman-1872.jpg");
+  width: 100%;
+  aspect-ratio: 16 / 12;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  line-height: 1.6;
+  h1 {
+    margin: 0;
+    font-size: 76px;
+  }
+  p {
+    text-wrap: wrap;
+    letter-spacing: 3px;
+    font-size: 22px;
+  }
+  .btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 80%;
+    .btn {
+      transition: all 0.3s ease-in-out;
+      text-wrap: nowrap;
+      width: 15%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      color: inherit;
+      padding: 15px 28px;
+      border: 2px solid var(--second-color);
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+    }
+    .btn:first-child {
+      background-color: var(--icon-color);
+      border-color: var(--icon-color);
+    }
+    .btn:hover {
+      color: black;
+      background-color: var(--second-color);
+      border-color: var(--second-color);
+    }
+  }
+}
+.sec2 {
+  line-height: 2.2;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 50px;
+  line-height: 1.6;
+  width: 100%;
+  .img {
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    img {
+      width: 100%;
+    }
+}
+  .desc {
+    padding: 20px;
+    width: 45%;
+    h2 {
+      color: var(--h-color);
+      font-size: 32px;
+      font-weight: 400;
+    }
+    .features {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 2px;
+      p {
+        color: var(--p-color);
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 1.6rem;
+      }
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767.98px) {
+  header {
+    height: 10vh;
+    nav ul {
+      li a {
+        font-size: 0.5em;
+      }
+    }
+  }
+  .sec1 {
+    padding-top: 10vh;
+    gap: 1vh;
+    h1 {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+    p {
+      letter-spacing: 1px;
+      font-size: 0.7rem;
+    }
+    .btns {
+      .btn {
+        font-size: 0.4rem;
+      }
+    }
+  }
+  .sec2 {
+    flex-direction: column;
+    padding: 10px;
+    .img {
+     
+      width: 90%;
+    }
+    .desc {
+      width: 100%;
+      h2 {
+       
+        font-size: 2rem;
+        
+      }
+      p {
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+      .features {
+        gap: 5px;
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1439.99px) {
+  header {
+    height: 12vh;
+    nav ul {
+      li a {
+        font-size: 0.7em;
+      }
+    }
+  }
+  .sec1 {
+    padding-top: 12vh;
+    h1 {
+      margin: 0;
+      font-size: 1.6rem;
+    }
+    p {
+      letter-spacing: 2px;
+      font-size: 1rem;
+    }
+    .btns {
+      .btn {
+        font-size: 0.7rem;
+      }
+    }
+  }
+  .sec2 {
+    width: 100%;
+    .img {
+      width: 45%;
+    }
+    .desc {
+      h2 {
+       
+        font-size: 1.8rem;
+        
+      }
+      p {
+        line-height: 1.6;
+        font-size: 0.7rem;
+      }
+      .features {
+        gap: 5px;
+        p {
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  header {
+    nav ul {
+      justify-content: space-around;
+      li a {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .sec1 {
+    h1 {
+      margin: 0;
+      font-size: 2.4rem;
+    }
+    p {
+      letter-spacing: 5px;
+      font-size: 1.2rem;
+    }
+    .btns {
+      .btn {
+        font-size: 1rem;
+      }
+    }
+  }
+   .sec2 {
+    width: 100%;
+    .img {
+      width: 40%;
+    }
+    .desc {
+      h2 {
+       
+        font-size: 2.5rem;
+        
+      }
+      p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+      }
+      .features {
+        gap: 5px;
+        p {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1441px) and (max-width: 2560px) {
+  header {
+    nav ul {
+      justify-content: space-around;
+      li a {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  .sec1 {
+    h1 {
+      margin: 0;
+      font-size: 5.5rem;
+    }
+    p {
+      letter-spacing: 5px;
+      font-size: 3.2rem;
+    }
+    .btns {
+      .btn {
+        font-size: 2.4rem;
+      }
+    }
+  }
+  .sec2 {
+    width: 100%;
+    .img {
+      width: 35%;
+    }
+    .desc {
+      h2 {
+       
+        font-size: 4.5rem;
+        
+      }
+      p {
+        font-size: 2.4rem;
+        line-height: 1.8;
+      }
+      .features {
+        gap: 5px;
+        p {
+          font-size: 2.4rem;
+        }
+      }
+    }
+  }
+}
