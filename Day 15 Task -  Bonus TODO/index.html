@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Day 15 Task - Bonus TODO</title>
+  </head>
+  <body>
+    <div
+      class="container mx-auto w-100 vh-100 d-flex align-items-center justify-content-center"
+    >
+      <div class="todo p-4 w-50 d-flex flex-column gap-4 rounded-1">
+        <h1>Todo App</h1>
+        <div class="d-flex gap-2">
+          <input
+            class="add-todo form-control"
+            type="text"
+            placeholder="Add Your New Todo"
+          />
+          <button class="add-btn btn btn-primary">+</button>
+        </div>
+        <ul class="list-group d-flex flex-column gap-2"></ul>
+        <div class="count-todos d-flex flex-column">
+          <p id="count-display" class="text-nowrap fw-medium">You have 0 Pending Tasks</p>
+          <button id="reset" class="btn btn-primary text-nowrap">
+            Clear All
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

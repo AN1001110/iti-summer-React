@@ -1,0 +1,17 @@
+:root {
+  --todo-bg: rgb(253, 255, 254);
+  --task-bg-color: rgb(243, 241, 244);
+ }
+
+body {
+  background: linear-gradient(145deg, rgb(104, 227, 205), rgb(75, 136, 229));
+  height: 100vh;
+}
+.todo {
+  background-color: var(--todo-bg);
+  
+}
+.list-group-item{
+  background-color: var(--task-bg-color);
+
+}
