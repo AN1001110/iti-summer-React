@@ -1,0 +1,46 @@
+import { useState } from "react";
+import OutputText from "../OutputText/OutputText";
+import { useNavigate } from "react-router";
+
+export default function InputField() {
+  const [text, setText] = useState("");
+  const [password, setPassword] = useState("");
+  const nav = useNavigate();
+
+  return (
+    <>
+      <div className=" container d-flex w-100 vh-100 align-items-center justify-content-center flex-column gap-4 bg-success ">
+        <div className="input-group mb-3  d-flex  align-items-center justify-content-center flex-column gap-2 ">
+          <label className="text-white fw-bold" htmlFor="text">
+            user name
+          </label>
+          <input
+            id="text"
+            onInput={(e) => setText(e.target.value)}
+            type="text"
+            className="form-control w-100"
+            aria-label="Text input with checkbox"
+          />
+          <label className="text-white fw-bold" htmlFor="password">
+            user password
+          </label>
+          <input
+            id="password"
+            onInput={(e) => setPassword(e.target.value)}
+            type="password"
+            className="form-control w-100"
+            aria-label="Text input with checkbox"
+          />
+        </div>
+        <OutputText text={text} password={password} />
+        <button
+          onClick={() => nav("/result")}
+          className="btn btn-info"
+          type="submit"
+        >
+          sign up
+        </button>
+      </div>
+    </>
+  );
+}
